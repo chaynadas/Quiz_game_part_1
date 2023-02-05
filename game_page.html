@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Math Quiz Game</title>
-
+	<title>Guess The Word</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dMsmMBL3buew0GAoj7sJYWTiYlsLzB2JVzW6J0LpoIDWeMB6Qk_2XwHD09s8SGquQXbkLJrwQ8aqkmA-QP7SQZh_Q7SMBTXz67KcK6HCbZhbAXciUeWTzuQakrxZF_8RCD3gdnVF8vkUwyy1_QO7s1izgiyiOOnWZf3J4o5kZmcEtM2PN_r0m0a-ziOq5yeFN11sVu4Njla_v8B3QUyZ4orZfWVwIfe1cM2CeBGJ-SGqTSPBkN2oDI7Nqinv6VhlhUSe4M7T0dak-pjpENUy8-XcVBMSusX88rb_K8SMf9FNLf4iY6f121-OyY6LPnQuFd23Q9pXOOD3RyPGyLv_L46dQE328eXmYF_8yDWT_0I5fKLYQb4n1ZdBNhHfJIJZ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMG8tYmMtZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9wZG5hbGk5aWFiM3V2MjIwN2lkYzEzZXBjbm1ibXM1Ny9hdGYycGJsZ3JwMjNhaWh0a20xcmNlamkzMGVoNWgwYy8xNjc0NDU2NTI1MDAwLzAxOTYxNTI0MjExNjY2MTUxNzI0LzA5OTIxODIwMzQ0MTM3MDI1MTIwWi8xV1FDVDJUbVJXUUJLUnRlUEo3MnA0Yjl5d0g1dFZCbmY_ZT1kb3dubG9hZCZ1dWlkPTgxMDk1MDg4LTBiZjktNGM4My05Mzg1LTBlNmYwYzdiNWUxOA"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="game.css">
 </head>
 <body>
-<h4 id="Player1_name"></h4> <span id="Player1_score"></span>
-<br>
-<h4 id="Player2_name"></h4> <span id="Player2_score"></span>
-
+	<h4 id="player1_name" style="color: bisque; text-decoration: none; font-family: none;"></h4> <span id="player1_score"></span>
+	<br>
+	<h4 id="player2_name" style="color: bisque; text-decoration: none; font-family: none;"></h4> <span id="player2_score"></span>
+	<div class="container">
 <div class="container">
 	<center>
-		<h1 style="color: red;">The Math Quiz Game</h1>
-		<h3 id="Player_question"></h3>
-		<h3 id="Player_answer"></h3>
-		<div id="output" class="col_lg_6"></div>
+		<h2 style="color: white; font-family: 'Yellowtail', cursive; font-size: 50px;">Here You Go!!</h2>
+		<h3 id="player_question" style="font-family: none; color: black;"></h3>
+		<h3 id="player_answer" style="font-family: none; color: black;"></h3>
 		<br>
 		<br>
-		<h4> Number 1</h4>
+		<div id="output" class="col-lg-6"></div>
 		<br>
-		<input type="text" class="form-control" id = "Number_1" placeholder="Number 1">
+		<h4>Number 1</h4>
+		<input type="number" class="form-control" id="number_1" placeholder="Number 1" style="width: 30%;">
+		<h4>Number 2</h4>
+		<input type="number" class="form-control" id="number_2" placeholder="Number 2" style="width: 30%;">
 		<br>
-		<h4> Number 2</h4>
-		<input type="text" class="form-control" id = "Number_2" placeholder="Number 2">
-        <br>
-		<button onclick="Send()" class="btn btn-success btn-lg" style="width: 30%;">Send</button>
+		<button onclick="send()" style="width: 20%; background-color: aquamarine; color: black; font-weight: bold; border-radius: 5px;" class="btn btn-link">Send</button>
 	</center>
 </div>
-
-<script src="quiz_game_login.js"></script>
+<script src="game_page.js"></script>
 </body>
 </html>
