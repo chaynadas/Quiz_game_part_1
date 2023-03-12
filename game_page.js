@@ -13,7 +13,8 @@ document.getElementById("player2_score").innerHTML = player2_score;
 document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name;
 document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_name;
 
-function send() {
+function send() 
+{
     number1 = document.getElementById("number_1").value;
     number2 = document.getElementById("number_2").value;
     actual_answer = parseInt(number1) * parseInt(number2);

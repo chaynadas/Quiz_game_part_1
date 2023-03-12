@@ -1,7 +1,9 @@
-body
+.body_background
 {
-	background-image: url("https://cdn.hipwallpaper.com/i/75/53/0cFvKO.jpg");
-	background-size: cover;
+	background-image: url("my_image.jpg");
+	
+	text-align: center;
+	
 }
 
 	.login_div1 , .login_div2
@@ -12,7 +14,7 @@ body
 		border-radius: 15px;
 		width: 30%;
 		height: 150px;
-		background-color: wheat;
+		background-color: greenyellow;
 	}
 
 
